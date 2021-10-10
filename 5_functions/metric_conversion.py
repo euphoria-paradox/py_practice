@@ -220,64 +220,66 @@ def convertFromInch(output, value):
 def convertFromfeet(output, value):
     
     if output == 'cm':
-        result = value * 2.538071
+        result = value * 30.48
         if value > 1:
-            print(value,'inches =', format(result,'.2f'),'cm')
+            print(value,'feet =', format(result,'.2f'),'cm')
         else:
-            print(value,'inch =', format(result,'.2f'),'cm')
+            print(value,'foot =', format(result,'.2f'),'cm')
 
     elif output == 'm':
-        result = value * 0.0254
+        result = value * 0.3048
         if value > 1:
-            print(value,'inches =', format(result,'.2f'),'m')
+            print(value,'feet =', format(result,'.2f'),'m')
         else:
-            print(value,'inch =', format(result,'.2f'),'m')
+            print(value,'foot =', format(result,'.2f'),'m')
         
     elif output == 'km':
-        result = value * 2.54e-5
+        result = value * 0.3048e-3
         if value > 1:
-            print(value,'inches =', format(result,'.2f'),'km' )
+            print(value,'feet =', format(result,'.2f'),'km' )
         else:
-            print(value,'inch =', format(result,'.2f'),'km' )
+            print(value,'foot =', format(result,'.2f'),'km' )
     
     elif output == 'feet':
-        result = value * 0.08333
+        result = value * 12
         if value > 1:
             if result > 1:
-                print(value,'inches =', format(result,'.2f'),'feet' )
+                print(value,'feet =', format(result,'.2f'),'inches' )
             else:
-                print(value,'inches =', format(result,'.2f'),'foot' )
+                print(value,'feet =', format(result,'.2f'),'inch' )
         else:
             if result > 1:
-                print(value,'inch =', format(result,'.2f'),'feet' )
+                print(value,'foot =', format(result,'.2f'),'inches' )
             else:
-                print(value,'inch =', format(result,'.2f'),'foot' )
+                print(value,'foot =', format(result,'.2f'),'inch' )
         
     elif output == 'mile':
-        result = value * 1.5782828e-5
+        result = value * 0.189394e-3
         if value > 1:
             if result > 1:
-                print(value,'inches =', format(result,'.2f'),'miles' )
+                print(value,'feet =', format(result,'.2f'),'miles' )
             else:
-                print(value,'inches =', format(result,'.2f'),'mile' )
+                print(value,'feet =', format(result,'.2f'),'mile' )
         else:
             if result > 1:
-                print(value,'inch =', format(result,'.2f'),'miles' )
+                print(value,'foot =', format(result,'.2f'),'miles' )
             else:
-                print(value,'inches =', format(result,'.2f'),'mile' )
+                print(value,'foot =', format(result,'.2f'),'mile' )
                 
                 
     elif output == 'yard':
-        result = value * 0.0278
+        result = value * 0.333333
         if value > 1:
             if result > 1:
-                print(value,'inches =', format(result,'.2f'),'yards' )
+                print(value,'feet =', format(result,'.2f'),'yards' )
             else:
-                print(value,'inches =', format(result,'.2f'),'yard' )
+                print(value,'feet =', format(result,'.2f'),'yard' )
         else:
             if result > 1:
-                print(value,'inch =', format(result,'.2f'),'yards' )
+                print(value,'foot =', format(result,'.2f'),'yards' )
             else:
-                print(value,'inch =', format(result,'.2f'),'yard')
+                print(value,'foot =', format(result,'.2f'),'yard')
+                
+                
     
     
