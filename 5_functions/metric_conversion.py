@@ -399,14 +399,14 @@ def convertFromYard(output, value):
         result = value * 0.5681818e-3
         if value > 1:
             if result > 1:
-                print(value,'yards =', format(result,'.2f'),'yards' )
+                print(value,'yards =', format(result,'.2f'),'miles' )
             else:
-                print(value,'yards =', format(result,'.2f'),'yard' )
+                print(value,'yards =', format(result,'.2f'),'mile' )
         else:
             if result > 1:
-                print(value,'yard =', format(result,'.2f'),'yards' )
+                print(value,'yard =', format(result,'.2f'),'miles' )
             else:
-                print(value,'yard =', format(result,'.2f'),'yard')
+                print(value,'yard =', format(result,'.2f'),'mile')
                 
     
     
