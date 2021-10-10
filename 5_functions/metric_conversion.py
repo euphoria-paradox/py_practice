@@ -240,7 +240,7 @@ def convertFromfeet(output, value):
         else:
             print(value,'foot =', format(result,'.2f'),'km' )
     
-    elif output == 'feet':
+    elif output == 'inch':
         result = value * 12
         if value > 1:
             if result > 1:
@@ -280,6 +280,133 @@ def convertFromfeet(output, value):
             else:
                 print(value,'foot =', format(result,'.2f'),'yard')
                 
+
+def convertFromMile(output, value):
+    
+    if output == 'cm':
+        result = value * 160934
+        if value > 1:
+            print(value,'miles =', format(result,'.2f'),'cm')
+        else:
+            print(value,'mile =', format(result,'.2f'),'cm')
+
+    elif output == 'm':
+        result = value * 1609.34
+        if value > 1:
+            print(value,'miles =', format(result,'.2f'),'m')
+        else:
+            print(value,'mile =', format(result,'.2f'),'m')
+        
+    elif output == 'km':
+        result = value * 1.60934
+        if value > 1:
+            print(value,'miles =', format(result,'.2f'),'km' )
+        else:
+            print(value,'mile =', format(result,'.2f'),'km' )
+    
+    elif output == 'inch':
+        result = value * 63360
+        if value > 1:
+            if result > 1:
+                print(value,'miles =', format(result,'.2f'),'inches' )
+            else:
+                print(value,'miles =', format(result,'.2f'),'inch' )
+        else:
+            if result > 1:
+                print(value,'mile =', format(result,'.2f'),'inches' )
+            else:
+                print(value,'mile =', format(result,'.2f'),'inch' )
+        
+    elif output == 'feet':
+        result = value * 5280
+        if value > 1:
+            if result > 1:
+                print(value,'miles =', format(result,'.2f'),'feet' )
+            else:
+                print(value,'miles =', format(result,'.2f'),'foot' )
+        else:
+            if result > 1:
+                print(value,'mile =', format(result,'.2f'),'feet' )
+            else:
+                print(value,'mile =', format(result,'.2f'),'foot' )
+                
+                
+    elif output == 'yard':
+        result = value * 1760
+        if value > 1:
+            if result > 1:
+                print(value,'miles =', format(result,'.2f'),'yards' )
+            else:
+                print(value,'miles =', format(result,'.2f'),'yard' )
+        else:
+            if result > 1:
+                print(value,'mile =', format(result,'.2f'),'yards' )
+            else:
+                print(value,'mile =', format(result,'.2f'),'yard')
+                
+
+def convertFromYard(output, value):
+    
+    if output == 'cm':
+        result = value * 91.4444
+        if value > 1:
+            print(value,'yards =', format(result,'.2f'),'cm')
+        else:
+            print(value,'yard =', format(result,'.2f'),'cm')
+
+    elif output == 'm':
+        result = value * 0.91444
+        if value > 1:
+            print(value,'yards =', format(result,'.2f'),'m')
+        else:
+            print(value,'yard =', format(result,'.2f'),'m')
+        
+    elif output == 'km':
+        result = value * 0.91444e-3
+        if value > 1:
+            print(value,'yards =', format(result,'.2f'),'km' )
+        else:
+            print(value,'yard =', format(result,'.2f'),'km' )
+    
+    elif output == 'inch':
+        result = value * 36
+        if value > 1:
+            if result > 1:
+                print(value,'yards =', format(result,'.2f'),'inches' )
+            else:
+                print(value,'yards =', format(result,'.2f'),'inch' )
+        else:
+            if result > 1:
+                print(value,'yard =', format(result,'.2f'),'inches' )
+            else:
+                print(value,'yard =', format(result,'.2f'),'inch' )
+        
+    elif output == 'feet':
+        result = value * 3
+        if value > 1:
+            if result > 1:
+                print(value,'yards =', format(result,'.2f'),'feet' )
+            else:
+                print(value,'yards =', format(result,'.2f'),'foot' )
+        else:
+            if result > 1:
+                print(value,'yard =', format(result,'.2f'),'feet' )
+            else:
+                print(value,'yard =', format(result,'.2f'),'foot' )
+                
+                
+    elif output == 'mile':
+        result = value * 0.5681818e-3
+        if value > 1:
+            if result > 1:
+                print(value,'yards =', format(result,'.2f'),'yards' )
+            else:
+                print(value,'yards =', format(result,'.2f'),'yard' )
+        else:
+            if result > 1:
+                print(value,'yard =', format(result,'.2f'),'yards' )
+            else:
+                print(value,'yard =', format(result,'.2f'),'yard')
                 
     
     
